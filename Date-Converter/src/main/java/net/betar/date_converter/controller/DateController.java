@@ -13,6 +13,7 @@ import java.time.LocalDate;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @AllArgsConstructor
 public class DateController {
 

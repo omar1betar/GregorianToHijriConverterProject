@@ -8,6 +8,7 @@ import java.time.LocalDate;
 
 @RestController
 @RequestMapping("/api/hijri")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @AllArgsConstructor
 public class DateController {
 
