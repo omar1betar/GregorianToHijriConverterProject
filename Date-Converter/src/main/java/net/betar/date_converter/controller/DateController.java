@@ -1,28 +1,34 @@
 package net.betar.date_converter.controller;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import net.betar.date_converter.data.DateWrapper;
 import net.betar.date_converter.service.DateService;
-import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Mono;
 
-import java.sql.SQLOutput;
+import reactor.core.publisher.Mono;
+import org.springframework.validation.FieldError;
 import java.time.LocalDate;
+import java.util.stream.Collectors;
 
 @RestController
+
 @RequestMapping("/api")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @AllArgsConstructor
+
 public class DateController {
 
     private final DateService dateService;
 
 
     @PostMapping("/send")
-    public Mono<String> postDate(@RequestBody DateWrapper dateWrapper) {
+    public ResponseEntity<Mono<String>> postDate(@Valid @RequestBody DateWrapper dateWrapper) {
+
         LocalDate date = dateWrapper.getDate();
-        return dateService.getHijriDate(date);
+        return ResponseEntity.ok(dateService.getHijriDate(date));
     }
 }

@@ -16,11 +16,11 @@ public class DateService {
     private final WebClient.Builder  webClientBuilder;
 
     public Mono<String> getHijriDate(LocalDate date) {
-        String requestBody = "{ \"date\": \"" + date.toString() + "\" }";  // Adjust this based on your actual JSON structure
+        String requestBody = "{ \"date\": \"" + date.toString() + "\" }";
         return webClientBuilder.build()
                 .post()
                 .uri("http://localhost:8002//api/hijri/convert")
-                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)  // Set content type as JSON
+                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .bodyValue(requestBody)
                 .retrieve()
                 .bodyToMono(String.class);
