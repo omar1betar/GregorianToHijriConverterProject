@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8785e4f4-88c6-49ab-a21a-513aff77c02f" name="Changes" comment="completeFrontEnd">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Date-Converter/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DateConverter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DateConverter/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DateConverter/DateConverter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hijri-Date/Dockerfile" afterDir="false" />
+    <list default="true" id="8785e4f4-88c6-49ab-a21a-513aff77c02f" name="Changes" comment="dockerzing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hijri-Date/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Hijri-Date/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Date-Converter/src/main/java/net/betar/date_converter/service/DateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Date-Converter/src/main/java/net/betar/date_converter/service/DateService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,14 +60,14 @@
     "Maven.Hijri-Date [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20240713_0002",
+    "com.google.cloudcode.ide_session_index": "20240713_0003",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/omar/Downloads/JAVA/DateConverter",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "google.ai.companion.settings"
+    "settings.editor.selected.configurable": "google.kubernetes.settings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -140,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720778509895</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dockerzing">
+      <option name="closed" value="true" />
+      <created>1720868551486</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868551486</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +159,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completeFrontEnd" />
     <MESSAGE value="finilizingBackend" />
-    <option name="LAST_COMMIT_MESSAGE" value="finilizingBackend" />
+    <MESSAGE value="dockerzing" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerzing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

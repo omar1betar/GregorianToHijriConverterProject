@@ -19,7 +19,7 @@ public class DateService {
         String requestBody = "{ \"date\": \"" + date.toString() + "\" }";
         return webClientBuilder.build()
                 .post()
-                .uri("http://localhost:8002//api/hijri/convert")
+                .uri("http://localhost:8001/api/hijri/convert")
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .bodyValue(requestBody)
                 .retrieve()
